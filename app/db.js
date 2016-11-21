@@ -10,6 +10,7 @@ var mongoose = require('mongoose');
         console.log ('Succeeded connected to: ' + dbUrl);
     }
   });
+
   module.exports= {
     mongoose: mongoose,
     Course: require('./model/course')(mongoose),
